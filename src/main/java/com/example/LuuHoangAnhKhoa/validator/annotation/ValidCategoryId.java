@@ -16,7 +16,7 @@ import java.lang.annotation.Target;
 @Constraint(validatedBy = ValidCategoryIdValidator.class)
 @Documented
 public @interface ValidCategoryId {
-    String message() default "Invalid Cateogry ID";
+    String message() default "Invalid Category ID";
     Class<?> [] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
